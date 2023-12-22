@@ -15,11 +15,9 @@
   "emmet.triggerExpansionOnTab": true,
   "explorer.openEditors.visible": 0,
   "files.autoSave": "afterDelay",
-  "screencastMode.onlyKeyboardShortcuts": true,
   "terminal.integrated.fontSize": 18,
   "window.zoomLevel": 3,
-  "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Default Light+",
+  "workbench.editor.openSideBySideDirection": "down",
   "workbench.fontAliasing": "antialiased",
   "workbench.statusBar.visible": true,
   "sqltools.connections": [
@@ -29,6 +27,5 @@
       "name": "Test",
       "database": "${workspaceFolder:Demos}/CarsForAll.db"
     }
-  ],
-  "workbench.editor.openSideBySideDirection": "down"
+  ]
 }
