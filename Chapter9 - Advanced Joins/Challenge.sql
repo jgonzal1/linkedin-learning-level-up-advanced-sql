@@ -69,7 +69,11 @@ WITH
       FROM
          Animals
       WHERE
-         Gender = "Male"
+         Gender = "M"
+      ORDER BY
+         Species
+       , Breed
+       , Name
       LIMIT
          100
    )
@@ -81,17 +85,26 @@ WITH
       FROM
          Animals
       WHERE
-         Gender = "Female"
+         Gender = "F"
+      ORDER BY
+         Species
+       , Breed
+       , Name
       LIMIT
          100
    )
- , SELECT
+SELECT DISTINCT
    AM.Species
  , AM.Breed
- , AM.Name
- , AF.Name
+ , AM.Name AS Male
+ , AF.Name AS Female
 FROM
    AM
    INNER JOIN AF ON AM.Species = AF.Species
-   AND AM.Species = AF.Species
+   AND AM.Breed = AF.Breed
+ORDER BY
+   Species
+ , Breed
+ , Male
+ , Female
 ;
